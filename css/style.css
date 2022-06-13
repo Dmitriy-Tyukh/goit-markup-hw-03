@@ -1,0 +1,187 @@
+/*  цвет */
+
+/* цвет основного текста: rgba(117, 117, 117, 1) */
+/* цвет акцента кнопка портфолио Logo и ссылки (синий): rgba(33, 150, 243, 1) */
+/* белый цвет: #FFFFFF; */
+/* чорний цвет h-h3: rgba(33, 33, 33, 1) */
+/* цвет background hero, footer: rgba(47, 48, 58, 1) */
+
+/* переменные */
+:root {
+  --title-text-color: rgba(33, 33, 33, 1);
+  --primary-text-color: rgba(117, 117, 117, 1);
+  --аccent-color: rgba(33, 150, 243, 1);
+  --background-color: #ffffff;
+  --footer-backgraund-color: rgba(47, 48, 58, 1);
+}
+
+/* body стили */
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  background: var(--background-color);
+  color: var(--primary-text-color);
+}
+/* link decoration */
+a {
+  text-decoration: none;
+  font-style: normal;
+}
+li {
+  list-style: none;
+}
+/* title color*/
+h1,
+h2,
+h3 {
+  color: var(--title-text-color);
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/*          page studio          */
+/* logo */
+.logo,
+.studio {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.17;
+  color: var(--аccent-color);
+}
+.studio {
+  color: var(--title-text-color);
+}
+
+/* navigation */
+.site-nav .link {
+  font-weight: 500;
+  color: var(--title-text-color);
+}
+.site-nav .link.current {
+  color: var(--аccent-color);
+}
+.auth-nav .link {
+  font-weight: 500;
+  color: var(--primary-text-color);
+}
+.link:hover,
+.link:focus {
+  color: var(--аccent-color);
+}
+
+/* hero section */
+.hero-section {
+  background: rgba(47, 48, 58, 1);
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-align: Center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.hero-button {
+  font-family: inherit;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+
+  letter-spacing: 0.06em;
+  background: var(--аccent-color);
+  color: #ffffff;
+}
+
+/* advantages-section */
+.section-title {
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+.list-title {
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+/* work section */
+
+/* team section */
+.team-section {
+  background: rgba(245, 244, 250, 1);
+}
+.team-list .list-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+}
+.profession {
+  font-size: 16px;
+  line-height: 1.18;
+}
+
+/* footer */
+.footer-section {
+  background: var(--footer-backgraund-color);
+}
+.footer-section .studio,
+.address-list .text {
+  color: #ffffff;
+}
+.address-list .link {
+  color: rgba(255, 255, 255, 0.6);
+}
+.address-list .link:hover,
+.address-list .link:focus {
+  color: var(--аccent-color);
+}
+
+/*       page portfolio        */
+.filter-button {
+  font-family: inherit;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+ 
+  padding: 6px 22px;
+  border-radius: 4px;
+  border: none;
+  text-transform: none;
+  background: rgba(245, 244, 250, 1);
+  color: var(--title-text-color);
+}
+.active {
+  background-color: var(--аccent-color);
+  color: #ffffff;
+}
+.filter-button:hover,
+.filter-button:focus {
+  background: var(--аccent-color);
+  color: #ffffff;
+}
+.portfolio-title {
+  font-size: 18px;
+  line-height: 2.00;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+.desc {
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--primary-text-color);
+}
