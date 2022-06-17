@@ -23,7 +23,8 @@ html {
   box-sizing: inherit;
 }
 
-/* body стили */
+/*----- body ------*/
+
 body {
   margin: 0;
   font-family: Roboto, sans-serif;
@@ -60,7 +61,7 @@ a {
   margin-top: 0;
   margin-bottom: 0;
 }
-/* Скрывает заголоовки h2 */
+/* visually-hidden h2 */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -75,7 +76,7 @@ a {
   overflow: hidden;
 }
 
-/*.....header......*/
+/*------header------*/
 
 .container {
   width: 1200px;
@@ -83,7 +84,8 @@ a {
   margin: auto auto;
 }
 /*          page studio          */
-/* logo */
+
+          /* logo */
 
 .logo,
 .studio {
@@ -97,7 +99,8 @@ a {
   color: var(--title-text-color);
 }
 
-/* navigation */
+/*---- navigation----- */
+
 .navigation {
   display: flex;
 }
@@ -162,7 +165,7 @@ a {
   width: 696px;
   height: 120px;
   color: #ffffff;
-  }
+}
 
 .hero-button {
   font-family: inherit;
@@ -250,22 +253,22 @@ a {
   margin-bottom: 10px;
 }
 .team-list {
-    display: flex;
-    padding: 0;
+  display: flex;
+  padding: 0;
 }
 .team-card {
-width: 270px;
+  width: 270px;
 }
 .team-card + li {
-margin-left: 30px;
+  margin-left: 30px;
 }
 .team-img {
-    display: flex;
-    margin-bottom: 30px;
+  display: flex;
+  margin-bottom: 30px;
 }
 .team-card .list-title {
-    margin-bottom: 10px;
-    text-align: center;
+  margin-bottom: 10px;
+  text-align: center;
 }
 .profession {
   font-size: 16px;
@@ -281,12 +284,11 @@ margin-left: 30px;
   height: 252px;
   padding: 60px 0;
 }
-
 .footer-section .studio,
 .contact-list .text {
   color: #ffffff;
 }
- .contact-link .link {
+.contact-link .link {
   color: rgba(255, 255, 255, 0.6);
 }
 .contact-list .link:hover,
@@ -294,17 +296,16 @@ margin-left: 30px;
   color: var(--аccent-color);
 }
 .contact-list {
-    display: flex;
-    flex-direction: column;
-   margin-top: 20px;
-   padding: 0;
-   width: 231px;
+  margin-top: 20px;
+  padding: 0;
+  min-width: 231px;
 }
-.contact-link {
-    display: flex;
+.contact-link + li {
+  margin-top: 9px;
 }
-.contact-link + li{
-   margin-top: 9px;;
+.link,
+.text {
+  display: block;
 }
 
 /*       page portfolio        */
@@ -321,7 +322,6 @@ margin-left: 30px;
 }
 .btn-item + li {
   margin-left: 8px;
-
 }
 .button-list {
   display: flex;
