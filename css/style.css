@@ -226,7 +226,7 @@ h3 {
 
 /* work section */
 
-.work-section .section {
+.work-section.section {
   text-align: center;
   padding-top: 0;
 }
